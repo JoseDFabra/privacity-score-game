@@ -1,0 +1,6 @@
+# Sitio estático: publica esta carpeta como raíz del sitio.
+# En Netlify: Site settings → Build & deploy → Publish directory = esta carpeta (docs/legal),
+# o arrastra esta carpeta en "Deploy manually". HTTPS viene incluido en el plan gratuito.
+
+[build]
+  publish = "."

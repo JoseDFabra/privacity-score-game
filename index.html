@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Score Game — Política de privacidad y Términos</title>
+  <meta name="description" content="Política de privacidad y términos de uso de la aplicación Score Game." />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f0f1e;
+      --card: #1a1a2e;
+      --text: #e8e8ef;
+      --muted: #a0a0b8;
+      --accent: #8b7cff;
+      --border: rgba(255,255,255,.08);
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f5f5f8;
+        --card: #fff;
+        --text: #1a1a24;
+        --muted: #5c5c70;
+        --accent: #5b4fcf;
+        --border: rgba(0,0,0,.1);
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      font-size: 1rem;
+    }
+    .wrap {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .header-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 0 .5rem;
+      letter-spacing: -0.02em;
+    }
+    .lang-switch {
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      padding: .2rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .lang-switch button {
+      font: inherit;
+      font-size: .8rem;
+      font-weight: 600;
+      padding: .4rem .65rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: transparent;
+      color: var(--muted);
+    }
+    .lang-switch button:hover {
+      color: var(--text);
+      background: rgba(139, 124, 255, .12);
+    }
+    .lang-switch button[aria-pressed="true"] {
+      background: var(--accent);
+      color: #fff;
+    }
+    @media (prefers-color-scheme: light) {
+      .lang-switch button[aria-pressed="true"] { color: #fff; }
+    }
+    .meta {
+      color: var(--muted);
+      font-size: .875rem;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1.25rem;
+      margin-top: 1rem;
+      font-size: .9rem;
+    }
+    nav a { color: var(--accent); text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.35rem;
+      margin-bottom: 1.25rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 0 0 .75rem;
+      padding-top: .25rem;
+    }
+    h3 {
+      font-size: 1rem;
+      margin: 1.25rem 0 .5rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    p, ul { margin: 0 0 .75rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin-bottom: .35rem; }
+    .lang-panel[hidden] { display: none !important; }
+    footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: .8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-row">
+        <h1>Score Game</h1>
+        <div class="lang-switch" role="group" aria-label="Idioma / Language">
+          <button type="button" data-lang="es" aria-pressed="true">Español</button>
+          <button type="button" data-lang="en" aria-pressed="false">English</button>
+          <button type="button" data-lang="pt" aria-pressed="false">Português</button>
+        </div>
+      </div>
+    </header>
+
+      <!-- Español -->
+      <div class="lang-panel" data-lang="es" id="panel-es">
+        <p class="meta">Política de privacidad y condiciones de uso · Actualización: mayo de 2026</p>
+        <nav>
+          <a href="#privacidad-es">Política de privacidad</a>
+          <a href="#terminos-es">Términos y condiciones</a>
+        </nav>
+
+        <section id="privacidad-es" style="margin-top:1.25rem;">
+          <h2>Política de privacidad</h2>
+          <p>
+            Esta política describe cómo la aplicación móvil <strong>Score Game</strong>
+            (en adelante, «la aplicación») trata la información en relación con los usuarios.
+            El responsable del tratamiento es la <strong>persona natural</strong> desarrolladora de esta aplicación,
+            con residencia en <strong>Medellín, Antioquia, Colombia</strong>.
+            Para ejercer tus derechos o resolver dudas sobre privacidad puedes escribir a
+            <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
+          </p>
+          <h3>1. Qué datos se tratan</h3>
+          <p>La aplicación está pensada para llevar marcadores de partidas. En la medida en que introduzcas datos (por ejemplo nombres de jugadores, puntuaciones, plantillas o preferencias), estos se guardan <strong>principalmente en el dispositivo</strong> mediante almacenamiento local.</p>
+          <ul>
+            <li><strong>Datos de partida y configuración:</strong> información que tú introduces en la app (p. ej. nombres, rondas, categorías, ajustes de idioma o tema).</li>
+            <li><strong>Identificadores de compra:</strong> si realizas una compra opcional dentro de la aplicación, el pago lo procesa <strong>Google Play</strong>; Google puede tratar datos conforme a sus propias políticas. La aplicación no sustituye ni controla la pasarela de pago.</li>
+          </ul>
+          <h3>2. Finalidades</h3>
+          <ul>
+            <li>Permitir el funcionamiento de las funciones de marcador y utilidades incluidas en la aplicación.</li>
+            <li>Gestionar donaciones o compras opcionales ofrecidas a través de Google Play.</li>
+            <li>Cumplir obligaciones legales cuando proceda.</li>
+          </ul>
+          <h3>3. Conservación</h3>
+          <p>Los datos guardados localmente permanecen en tu dispositivo hasta que los borres, desinstales la aplicación o uses funciones de la propia app que eliminen información. Las facturas o registros de compras gestionados por Google siguen las políticas de Google Play.</p>
+          <h3>4. Cesiones y terceros</h3>
+          <p>No vendemos tus datos personales. La aplicación <strong>no integra, según el diseño actual, redes publicitarias de terceros</strong> para mostrar anuncios dentro de la app. Las compras in-app se realizan a través de <strong>Google Play Billing</strong>; consulta la política de privacidad de Google si utilizas esos servicios.</p>
+          <h3>5. Seguridad</h3>
+          <p>Adoptamos medidas razonables para proteger la información tratada en el marco de la aplicación. Ningún sistema es 100&nbsp;% infalible; usa la app en dispositivos actualizados y protegidos.</p>
+          <h3>6. Menores</h3>
+          <p>La aplicación no está dirigida de forma específica a menores de 14 años (o la edad aplicable en tu país). Si eres padre, madre o tutor y consideras que un menor ha facilitado datos, contacta en <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+          <h3>7. Derechos</h3>
+          <p>
+            Si resides en <strong>Colombia</strong>, conforme a la Ley 1581 de 2012 y normas concordantes, puedes ejercer derechos de conocimiento, actualización, rectificación y supresión, entre otros, contactando al correo indicado arriba.
+            Si resides en el <strong>EEE</strong>, también pueden aplicarse tus derechos según el RGPD.
+            Puedes presentar reclamaciones ante la autoridad competente (por ejemplo, en Colombia, la Superintendencia de Industria y Comercio en materia de protección de datos personales, según proceda).
+          </p>
+          <h3>8. Cambios</h3>
+          <p>Podemos actualizar esta política. La fecha de la última revisión se indicará en esta página. El uso continuado de la aplicación tras cambios relevantes puede implicar la aceptación de la política actualizada; revisa esta página periódicamente.</p>
+        </section>
+
+        <section id="terminos-es">
+          <h2>Términos y condiciones de uso</h2>
+          <p>Al descargar o usar <strong>Score Game</strong>, aceptas estos términos. Si no estás de acuerdo, no uses la aplicación.</p>
+          <h3>1. Licencia de uso</h3>
+          <p>Te concedemos una licencia personal, limitada, no exclusiva e intransferible para usar la aplicación conforme a su finalidad y a estas condiciones.</p>
+          <h3>2. Funcionalidad</h3>
+          <p>La aplicación se ofrece «tal cual», sin garantía de ausencia de errores o de disponibilidad ininterrumpida. El desarrollador puede actualizar, modificar o discontinuar funciones cuando sea razonablemente necesario.</p>
+          <h3>3. Compras y donaciones</h3>
+          <p>Las compras opcionales dentro de la aplicación se procesan mediante <strong>Google Play</strong>. Precios, impuestos, reembolsos y condiciones comerciales siguen las normas de Google y las que aceptes en el momento del pago. Las donaciones o compras son voluntarias.</p>
+          <h3>4. Uso aceptable</h3>
+          <p>No debes usar la aplicación para fines ilegales, para vulnerar derechos de terceros ni para intentar acceder de forma no autorizada a sistemas o datos ajenos.</p>
+          <h3>5. Limitación de responsabilidad</h3>
+          <p>En la medida permitida por la ley aplicable, no nos responsabilizamos de daños indirectos, lucro cesante o pérdida de datos salvo en los casos en que la ley obligue a otro régimen. La aplicación es una herramienta auxiliar para llevar puntuaciones; las decisiones de juego y sus consecuencias son responsabilidad de los usuarios.</p>
+          <h3>6. Legislación y conflictos</h3>
+          <p>
+            Salvo que una norma imperativa disponga lo contrario, estos términos se interpretarán según la legislación de la
+            <strong>República de Colombia</strong>.
+            Para controversias, las partes se someten a los jueces competentes de <strong>Medellín, Antioquia, Colombia</strong>,
+            sin perjuicio de los derechos irrenunciables que como consumidor puedas tener según la ley.
+          </p>
+          <h3>7. Contacto</h3>
+          <p>Consultas sobre estos términos o la privacidad: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+        </section>
+
+        <footer>
+          Score Game · Persona natural · Colombia · Contacto: j.fabra25@gmail.com
+        </footer>
+      </div>
+
+      <!-- English -->
+      <div class="lang-panel" data-lang="en" id="panel-en" hidden>
+        <p class="meta">Privacy policy and terms of use · Last updated: May 2026</p>
+        <nav>
+          <a href="#privacy-en">Privacy policy</a>
+          <a href="#terms-en">Terms and conditions</a>
+        </nav>
+
+        <section id="privacy-en" style="margin-top:1.25rem;">
+          <h2>Privacy policy</h2>
+          <p>
+            This policy describes how the <strong>Score Game</strong> mobile app (the “app”) handles information in relation to users.
+            The data controller is the <strong>individual</strong> developer of this app, residing in
+            <strong>Medellín, Antioquia, Colombia</strong>.
+            To exercise your rights or ask privacy questions, email
+            <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
+          </p>
+          <h3>1. Data we process</h3>
+          <p>The app is designed for keeping game scores. To the extent you enter data (for example player names, scores, templates, or preferences), it is stored <strong>primarily on your device</strong> using local storage.</p>
+          <ul>
+            <li><strong>Game and settings data:</strong> information you enter in the app (e.g. names, rounds, categories, language or theme settings).</li>
+            <li><strong>Purchase-related identifiers:</strong> if you make an optional in-app purchase, payment is processed by <strong>Google Play</strong>; Google may process data under its own policies. The app does not replace or control the payment gateway.</li>
+          </ul>
+          <h3>2. Purposes</h3>
+          <ul>
+            <li>To provide scorekeeping features and other utilities included in the app.</li>
+            <li>To handle optional donations or purchases offered through Google Play.</li>
+            <li>To comply with legal obligations where applicable.</li>
+          </ul>
+          <h3>3. Retention</h3>
+          <p>Data stored locally remains on your device until you delete it, uninstall the app, or use in-app features that remove information. Invoices or purchase records handled by Google follow Google Play policies.</p>
+          <h3>4. Sharing and third parties</h3>
+          <p>We do not sell your personal data. The app <strong>does not currently integrate third-party ad networks</strong> to show ads inside the app. In-app purchases use <strong>Google Play Billing</strong>; see Google’s privacy policy if you use those services.</p>
+          <h3>5. Security</h3>
+          <p>We take reasonable measures to protect information processed within the app. No system is 100% secure; use the app on updated, protected devices.</p>
+          <h3>6. Children</h3>
+          <p>The app is not specifically directed at children under 14 (or the applicable age in your country). If you are a parent or guardian and believe a child has provided data, contact <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+          <h3>7. Your rights</h3>
+          <p>
+            If you live in <strong>Colombia</strong>, under Law 1581 of 2012 and related rules, you may exercise rights such as access, update, correction, and deletion by contacting the email above.
+            If you live in the <strong>EEA</strong>, GDPR rights may also apply.
+            You may lodge complaints with the competent authority (for example, in Colombia, the Superintendence of Industry and Commerce for personal data matters, where applicable).
+          </p>
+          <h3>8. Changes</h3>
+          <p>We may update this policy. The last revision date will be shown on this page. Continued use of the app after material changes may mean you accept the updated policy; review this page periodically.</p>
+        </section>
+
+        <section id="terms-en">
+          <h2>Terms and conditions of use</h2>
+          <p>By downloading or using <strong>Score Game</strong>, you agree to these terms. If you disagree, do not use the app.</p>
+          <h3>1. License</h3>
+          <p>We grant you a personal, limited, non-exclusive, non-transferable license to use the app for its intended purpose and under these terms.</p>
+          <h3>2. Functionality</h3>
+          <p>The app is provided “as is”, without warranty of error-free operation or uninterrupted availability. The developer may update, change, or discontinue features when reasonably necessary.</p>
+          <h3>3. Purchases and donations</h3>
+          <p>Optional in-app purchases are processed through <strong>Google Play</strong>. Prices, taxes, refunds, and commercial terms follow Google’s rules and what you accept at checkout. Donations or purchases are voluntary.</p>
+          <h3>4. Acceptable use</h3>
+          <p>You must not use the app for unlawful purposes, to infringe third-party rights, or to attempt unauthorized access to systems or data.</p>
+          <h3>5. Limitation of liability</h3>
+          <p>To the fullest extent permitted by law, we are not liable for indirect damages, lost profits, or data loss except where the law requires otherwise. The app is an auxiliary tool for scores; gameplay decisions and consequences are the users’ responsibility.</p>
+          <h3>6. Law and disputes</h3>
+          <p>
+            Unless mandatory law says otherwise, these terms are governed by the laws of the
+            <strong>Republic of Colombia</strong>.
+            For disputes, the parties submit to the competent courts of <strong>Medellín, Antioquia, Colombia</strong>,
+            without prejudice to non-waivable consumer rights.
+          </p>
+          <h3>7. Contact</h3>
+          <p>Questions about these terms or privacy: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+        </section>
+
+        <footer>
+          Score Game · Individual developer · Colombia · Contact: j.fabra25@gmail.com
+        </footer>
+      </div>
+
+      <!-- Português -->
+      <div class="lang-panel" data-lang="pt" id="panel-pt" hidden>
+        <p class="meta">Política de privacidade e termos de uso · Atualização: maio de 2026</p>
+        <nav>
+          <a href="#privacidade-pt">Política de privacidade</a>
+          <a href="#termos-pt">Termos e condições</a>
+        </nav>
+
+        <section id="privacidade-pt" style="margin-top:1.25rem;">
+          <h2>Política de privacidade</h2>
+          <p>
+            Esta política descreve como o aplicativo móvel <strong>Score Game</strong>
+            (doravante, «o aplicativo») trata informações em relação aos usuários.
+            O responsável pelo tratamento é a <strong>pessoa física</strong> desenvolvedora deste aplicativo,
+            com residência em <strong>Medellín, Antioquia, Colômbia</strong>.
+            Para exercer seus direitos ou esclarecer dúvidas sobre privacidade, escreva para
+            <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
+          </p>
+          <h3>1. Quais dados são tratados</h3>
+          <p>O aplicativo é destinado a registrar placares de partidas. Na medida em que você insere dados (por exemplo nomes de jogadores, pontuações, modelos ou preferências), eles são armazenados <strong>principalmente no dispositivo</strong>, em armazenamento local.</p>
+          <ul>
+            <li><strong>Dados de partida e configuração:</strong> informações que você insere no app (ex.: nomes, rodadas, categorias, idioma ou tema).</li>
+            <li><strong>Identificadores de compra:</strong> se você realizar uma compra opcional no aplicativo, o pagamento é processado pela <strong>Google Play</strong>; a Google pode tratar dados conforme suas próprias políticas. O aplicativo não substitui nem controla o gateway de pagamento.</li>
+          </ul>
+          <h3>2. Finalidades</h3>
+          <ul>
+            <li>Permitir o funcionamento das funções de placar e utilitários incluídos no aplicativo.</li>
+            <li>Gerir doações ou compras opcionais oferecidas pela Google Play.</li>
+            <li>Cumprir obrigações legais quando aplicável.</li>
+          </ul>
+          <h3>3. Conservação</h3>
+          <p>Os dados guardados localmente permanecem no seu dispositivo até você apagá-los, desinstalar o aplicativo ou usar funções do próprio app que eliminem informações. Faturas ou registros de compras geridos pela Google seguem as políticas da Google Play.</p>
+          <h3>4. Transferências e terceiros</h3>
+          <p>Não vendemos seus dados pessoais. O aplicativo <strong>não integra, no desenho atual, redes publicitárias de terceiros</strong> para exibir anúncios dentro do app. As compras no app são feitas via <strong>Google Play Billing</strong>; consulte a política de privacidade da Google se usar esses serviços.</p>
+          <h3>5. Segurança</h3>
+          <p>Adotamos medidas razoáveis para proteger as informações tratadas no âmbito do aplicativo. Nenhum sistema é 100&nbsp;% infalível; use o app em dispositivos atualizados e protegidos.</p>
+          <h3>6. Menores</h3>
+          <p>O aplicativo não se dirige especificamente a menores de 14 anos (ou a idade aplicável no seu país). Se você é responsável legal e considera que um menor forneceu dados, entre em contato em <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+          <h3>7. Direitos</h3>
+          <p>
+            Se você reside na <strong>Colômbia</strong>, conforme a Lei 1581 de 2012 e normas conexas, pode exercer direitos de conhecimento, atualização, retificação e supressão, entre outros, contactando o e-mail indicado acima.
+            Se reside no <strong>EEE</strong>, também podem aplicar-se seus direitos ao abrigo do RGPD.
+            Pode apresentar reclamações à autoridade competente (por exemplo, na Colômbia, a Superintendência de Indústria e Comércio em matéria de proteção de dados pessoais, quando aplicável).
+          </p>
+          <h3>8. Alterações</h3>
+          <p>Podemos atualizar esta política. A data da última revisão será indicada nesta página. O uso continuado do aplicativo após alterações relevantes pode implicar a aceitação da política atualizada; consulte esta página periodicamente.</p>
+        </section>
+
+        <section id="termos-pt">
+          <h2>Termos e condições de uso</h2>
+          <p>Ao baixar ou usar <strong>Score Game</strong>, você aceita estes termos. Se não concordar, não use o aplicativo.</p>
+          <h3>1. Licença de uso</h3>
+          <p>Concedemos uma licença pessoal, limitada, não exclusiva e intransferível para usar o aplicativo conforme sua finalidade e estes termos.</p>
+          <h3>2. Funcionalidade</h3>
+          <p>O aplicativo é oferecido «como está», sem garantia de ausência de erros ou disponibilidade ininterrupta. O desenvolvedor pode atualizar, modificar ou descontinuar funções quando razoavelmente necessário.</p>
+          <h3>3. Compras e doações</h3>
+          <p>As compras opcionais no aplicativo são processadas pela <strong>Google Play</strong>. Preços, impostos, reembolsos e condições comerciais seguem as regras da Google e as que você aceitar no pagamento. Doações ou compras são voluntárias.</p>
+          <h3>4. Uso aceitável</h3>
+          <p>Você não deve usar o aplicativo para fins ilegais, para violar direitos de terceiros nem para tentar acessar de forma não autorizada sistemas ou dados alheios.</p>
+          <h3>5. Limitação de responsabilidade</h3>
+          <p>Na medida permitida pela lei aplicável, não nos responsabilizamos por danos indiretos, lucros cessantes ou perda de dados, salvo quando a lei exigir outro regime. O aplicativo é uma ferramenta auxiliar para placares; decisões de jogo e suas consequências são de responsabilidade dos usuários.</p>
+          <h3>6. Lei e conflitos</h3>
+          <p>
+            Salvo norma imperativa em contrário, estes termos regem-se pela legislação da
+            <strong>República da Colômbia</strong>.
+            Para controvérsias, as partes submetem-se aos juízes competentes de <strong>Medellín, Antioquia, Colômbia</strong>,
+            sem prejuízo de direitos irrenunciáveis do consumidor quando aplicável.
+          </p>
+          <h3>7. Contato</h3>
+          <p>Dúvidas sobre estes termos ou privacidade: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+        </section>
+
+        <footer>
+          Score Game · Pessoa física · Colômbia · Contato: j.fabra25@gmail.com
+        </footer>
+      </div>
+  </div>
+
+  <script>
+    (function () {
+      var STORAGE_KEY = 'scoregame-legal-lang';
+      var titles = {
+        es: 'Score Game — Política de privacidad y Términos',
+        en: 'Score Game — Privacy policy and Terms',
+        pt: 'Score Game — Política de privacidade e Termos'
+      };
+      var descriptions = {
+        es: 'Política de privacidad y términos de uso de la aplicación Score Game.',
+        en: 'Privacy policy and terms of use for the Score Game app.',
+        pt: 'Política de privacidade e termos de uso do aplicativo Score Game.'
+      };
+      var htmlLang = { es: 'es', en: 'en', pt: 'pt-BR' };
+
+      function getPreferredLang() {
+        var q = new URLSearchParams(window.location.search).get('lang');
+        if (q === 'es' || q === 'en' || q === 'pt') return q;
+        try {
+          var stored = localStorage.getItem(STORAGE_KEY);
+          if (stored === 'es' || stored === 'en' || stored === 'pt') return stored;
+        } catch (e) {}
+        var nav = (navigator.language || '').slice(0, 2).toLowerCase();
+        if (nav === 'en') return 'en';
+        if (nav === 'pt') return 'pt';
+        return 'es';
+      }
+
+      function setLang(code, fromUserClick) {
+        var panels = document.querySelectorAll('.lang-panel');
+        var buttons = document.querySelectorAll('.lang-switch button[data-lang]');
+        panels.forEach(function (el) {
+          var on = el.getAttribute('data-lang') === code;
+          el.hidden = !on;
+        });
+        buttons.forEach(function (btn) {
+          var active = btn.getAttribute('data-lang') === code;
+          btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+        });
+        document.documentElement.lang = htmlLang[code] || 'es';
+        document.title = titles[code] || titles.es;
+        var meta = document.querySelector('meta[name="description"]');
+        if (meta) meta.setAttribute('content', descriptions[code] || descriptions.es);
+        try {
+          localStorage.setItem(STORAGE_KEY, code);
+        } catch (e) {}
+        var url = new URL(window.location.href);
+        url.searchParams.set('lang', code);
+        if (fromUserClick) {
+          url.hash = '';
+          window.scrollTo(0, 0);
+        }
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState(null, '', url.pathname + url.search + url.hash);
+        }
+      }
+
+      document.querySelectorAll('.lang-switch button[data-lang]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          setLang(btn.getAttribute('data-lang'), true);
+        });
+      });
+
+      setLang(getPreferredLang(), false);
+    })();
+  </script>
+</body>
+</html>
