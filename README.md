@@ -10,7 +10,7 @@ No sustituye al código de la app Android ni al proceso de publicación del APK 
 
 ## ¿Qué es Score Game?
 
-**Score Game** es una aplicación móvil pensada para **llevar marcadores y puntuaciones de partidas** (jugadores, rondas, categorías, preferencias, etc.). Los datos que introduces se gestionan **principalmente en el dispositivo** mediante almacenamiento local. Las compras o donaciones opcionales, si las hubiera, se procesan a través de **Google Play Billing**.
+**Score Game** es una aplicación móvil para **marcadores y puntuaciones** (mesa, deportes, extras). La versión actual funciona **sin cuenta** y guarda la información **en el dispositivo** (partidas, plantillas, historial, avatares opcionales, widgets, etc.). Las donaciones opcionales se procesan con **Google Play** (Android) o **App Store** (iOS). Funciones en línea (cuenta, biblioteca social) están previstas pero **no activas** en la versión actual.
 
 El desarrollador es una **persona natural** con residencia en **Medellín, Antioquia, Colombia**. Para consultas sobre privacidad o estos términos: **j.fabra25@gmail.com**.
 
@@ -18,8 +18,8 @@ El desarrollador es una **persona natural** con residencia en **Medellín, Antio
 
 | Archivo / carpeta | Descripción |
 |-------------------|-------------|
-| `index.html` | Página única con política de privacidad y términos en **español**, **inglés** y **portugués**, con selector de idioma. |
+| `index.html` | Página única con política de privacidad y términos en **español**, **inglés**, **portugués** y **francés**, con selector de idioma. |
 
 ---
 
-*Última referencia de contenido en la página: mayo de 2026.*
+*Última referencia de contenido en la página: junio de 2026.*

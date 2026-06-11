@@ -141,13 +141,14 @@
           <button type="button" data-lang="es" aria-pressed="true">Español</button>
           <button type="button" data-lang="en" aria-pressed="false">English</button>
           <button type="button" data-lang="pt" aria-pressed="false">Português</button>
+          <button type="button" data-lang="fr" aria-pressed="false">Français</button>
         </div>
       </div>
     </header>
 
       <!-- Español -->
       <div class="lang-panel" data-lang="es" id="panel-es">
-        <p class="meta">Política de privacidad y condiciones de uso · Actualización: mayo de 2026</p>
+        <p class="meta">Política de privacidad y condiciones de uso · Actualización: junio de 2026</p>
         <nav>
           <a href="#privacidad-es">Política de privacidad</a>
           <a href="#terminos-es">Términos y condiciones</a>
@@ -164,38 +165,57 @@
             <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
           </p>
           <h3>1. Qué datos se tratan</h3>
-          <p>La aplicación permite llevar marcadores de partidas y, de forma opcional, crear una <strong>cuenta</strong> para usar la biblioteca social (plantillas públicas, likes, descargas). Parte de la información se guarda en el dispositivo y parte en servidores del desarrollador cuando usas esas funciones.</p>
+          <p>
+            <strong>Score Game</strong> está pensada para funcionar principalmente <strong>en tu dispositivo</strong>.
+            La versión actual <strong>no requiere cuenta</strong> ni envía tus partidas a servidores del desarrollador.
+            La información que introduces (marcadores, nombres, plantillas, etc.) se guarda de forma local salvo que tú decidas compartirla con otras apps o personas mediante las funciones de compartir del sistema.
+          </p>
           <ul>
-            <li><strong>Datos de partida y configuración (local):</strong> nombres de jugadores, puntuaciones, plantillas guardadas en el dispositivo, idioma o tema.</li>
-            <li><strong>Cuenta y perfil (servidor):</strong> si te registras o inicias sesión (correo y contraseña o Google), tratamos email, nombre mostrado, foto de perfil opcional y un <strong>nombre de usuario único (@nick)</strong> que eliges y que puede mostrarse en la biblioteca junto a tus plantillas publicadas. El @nick debe ser irrepetible; no se permiten nombres de empresas o marcas salvo verificación legal posterior.</li>
-            <li><strong>Actividad en biblioteca:</strong> plantillas que publicas, reacciones (me gusta / no me gusta), descargas y metadatos asociados (fechas, contadores).</li>
-            <li><strong>Identificadores de compra:</strong> compras opcionales vía <strong>Google Play</strong>; Google trata los datos de pago según sus políticas.</li>
+            <li><strong>Datos de partida y juegos (local):</strong> nombres de jugadores, puntuaciones, historial de partidas, partidas deportivas en curso, plantillas de categorías, plantillas de ruleta, presets de dados, historial deportivo, catálogo de jugadores frecuentes y preferencias de visibilidad de juegos.</li>
+            <li><strong>Configuración de la app (local):</strong> idioma, tema claro/oscuro, modo ligero, sonidos, consejos ya mostrados, juegos ocultos en el menú, contadores internos para solicitar valoración en la tienda y preferencias de donaciones en la interfaz.</li>
+            <li><strong>Fotos de jugador (local, opcional):</strong> si eliges añadir un avatar, la app puede acceder a la <strong>cámara</strong> o a la <strong>galería</strong> para que tomes o selecciones una imagen. La foto se comprime y se guarda solo en el almacenamiento interno de la aplicación; no se sube a servidores del desarrollador.</li>
+            <li><strong>Widgets de pantalla de inicio (local):</strong> en Android e iOS puedes añadir accesos directos a un juego. La elección del juego se guarda en el dispositivo (p. ej. preferencias del widget).</li>
+            <li><strong>Compartir (bajo tu control):</strong> puedes compartir códigos o enlaces de plantillas (<code>scoregame://</code>) o imágenes de resultados mediante el menú de compartir del sistema. Tú eliges la app o destinatario; el desarrollador no recibe esos envíos.</li>
+            <li><strong>Compras opcionales (tienda):</strong> las donaciones o compras voluntarias se procesan con <strong>Google Play</strong> (Android) o la <strong>App Store</strong> (iOS). El pago y los identificadores de transacción los gestiona la tienda correspondiente según sus políticas. En el dispositivo puede guardarse un registro local del apoyo mostrado en la app (p. ej. insignias de agradecimiento), sin datos bancarios.</li>
+            <li><strong>Características del dispositivo (local):</strong> para activar el modo ligero en equipos antiguos, la app puede leer el modelo o capacidades del dispositivo <strong>solo en el teléfono</strong>, sin enviarlos al desarrollador.</li>
           </ul>
-          <h3>2. Finalidades</h3>
+          <p><strong>Plantillas de la comunidad:</strong> Score Game incluye una biblioteca donde la comunidad puede compartir y explorar plantillas de juegos creadas por sus propios usuarios. Esta función no requiere cuenta de usuario ni ningún tipo de perfil o identificador. Opciones de cuenta propias podrán valorarse en versiones futuras; esta política se actualizará antes de activarlas.</p>
+          <h3>2. Permisos del dispositivo</h3>
+          <p>La app puede solicitar o usar los siguientes permisos según las funciones que utilices:</p>
           <ul>
-            <li>Permitir el funcionamiento de las funciones de marcador y utilidades incluidas en la aplicación.</li>
-            <li>Gestionar tu cuenta, autenticación y el nombre de usuario público en la biblioteca.</li>
-            <li>Mostrar plantillas comunitarias, rankings y atribuir autoría con tu @nick.</li>
-            <li>Moderar contenido y cuentas (p. ej. administradores pueden cambiar un @nick o suspender usuarios).</li>
-            <li>Gestionar donaciones o compras opcionales ofrecidas a través de Google Play.</li>
+            <li><strong>Internet:</strong> consultar productos de donación en la tienda, completar compras in-app y abrir la ficha de la app para valorarla. No se usa para sincronizar tus partidas con servidores del desarrollador en la versión actual.</li>
+            <li><strong>Cámara y galería (opcional):</strong> solo si añades una foto de perfil de jugador.</li>
+            <li><strong>Mantener pantalla encendida:</strong> durante partidas activas, para que no se apague la pantalla mientras llevas el marcador. No implica acceso a datos personales adicionales.</li>
+          </ul>
+          <h3>3. Finalidades</h3>
+          <ul>
+            <li>Permitir marcadores, deportes, extras (dados, ruleta, herramientas, etc.) y utilidades incluidas en la aplicación.</li>
+            <li>Guardar y recuperar tu información en el dispositivo.</li>
+            <li>Permitir avatares opcionales, widgets, compartir plantillas o resultados y accesos directos desde enlaces.</li>
+            <li>Gestionar donaciones o compras opcionales a través de Google Play o la App Store.</li>
+            <li>Mostrar, con moderación, solicitudes de valoración en la tienda tras varias partidas completadas.</li>
+            <li>Adaptar el rendimiento (modo ligero) en dispositivos limitados.</li>
             <li>Cumplir obligaciones legales cuando proceda.</li>
           </ul>
-          <h3>3. Conservación</h3>
-          <p>Los datos guardados localmente permanecen en tu dispositivo hasta que los borres, desinstales la aplicación o uses funciones de la propia app que eliminen información. Las facturas o registros de compras gestionados por Google siguen las políticas de Google Play.</p>
-          <h3>4. Cesiones y terceros</h3>
-          <p>No vendemos tus datos personales. La aplicación <strong>no integra, según el diseño actual, redes publicitarias de terceros</strong> para mostrar anuncios dentro de la app. Las compras in-app se realizan a través de <strong>Google Play Billing</strong>; consulta la política de privacidad de Google si utilizas esos servicios.</p>
-          <h3>5. Seguridad</h3>
+          <h3>4. Conservación</h3>
+          <p>Los datos guardados localmente permanecen en tu dispositivo hasta que los borres, desinstales la aplicación o uses funciones de la propia app que eliminen información. Las facturas o registros de compras los conserva Google o Apple según sus políticas.</p>
+          <h3>5. Cesiones y terceros</h3>
+          <p>No vendemos tus datos personales. La aplicación <strong>no integra redes publicitarias de terceros</strong> ni SDK de analítica publicitaria en la versión actual. Las compras in-app usan <strong>Google Play Billing</strong> o <strong>Apple In-App Purchase</strong>; consulta la política de privacidad de la tienda que utilices. Las tipografías de la interfaz se sirven desde recursos incluidos en la app (sin descarga de fuentes en tiempo de ejecución).</p>
+          <h3>6. Seguridad</h3>
           <p>Adoptamos medidas razonables para proteger la información tratada en el marco de la aplicación. Ningún sistema es 100&nbsp;% infalible; usa la app en dispositivos actualizados y protegidos.</p>
-          <h3>6. Menores</h3>
+          <h3>7. Menores</h3>
           <p>La aplicación no está dirigida de forma específica a menores de 14 años (o la edad aplicable en tu país). Si eres padre, madre o tutor y consideras que un menor ha facilitado datos, contacta en <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
-          <h3>7. Derechos</h3>
+          <h3>8. Derechos</h3>
           <p>
             Si resides en <strong>Colombia</strong>, conforme a la Ley 1581 de 2012 y normas concordantes, puedes ejercer derechos de conocimiento, actualización, rectificación y supresión, entre otros, contactando al correo indicado arriba.
             Si resides en el <strong>EEE</strong>, también pueden aplicarse tus derechos según el RGPD.
             Puedes presentar reclamaciones ante la autoridad competente (por ejemplo, en Colombia, la Superintendencia de Industria y Comercio en materia de protección de datos personales, según proceda).
           </p>
-          <h3>8. Cambios</h3>
+          <h3>9. Cambios</h3>
           <p>Podemos actualizar esta política. La fecha de la última revisión se indicará en esta página. El uso continuado de la aplicación tras cambios relevantes puede implicar la aceptación de la política actualizada; revisa esta página periódicamente.</p>
+          <h3>10. Plantillas de la comunidad y contenido de usuarios</h3>
+          <p>Score Game fue creada para llevar puntuaciones de juegos y para que la comunidad pueda crear y compartir plantillas de juego a su medida. Las plantillas disponibles en la biblioteca son creadas y publicadas íntegramente por los propios usuarios; Score Game actúa únicamente como plataforma de distribución.</p>
+          <p><strong>Score Game no se hace responsable del contenido, la exactitud ni la adecuación de las plantillas creadas o compartidas por los usuarios.</strong> La aplicación ofrece libertad creativa a su comunidad y no modera de forma preventiva el contenido publicado. Si encuentras una plantilla inapropiada, puedes reportarla a <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a> para su revisión.</p>
         </section>
 
         <section id="terminos-es">
@@ -206,19 +226,21 @@
           <h3>2. Funcionalidad</h3>
           <p>La aplicación se ofrece «tal cual», sin garantía de ausencia de errores o de disponibilidad ininterrumpida. El desarrollador puede actualizar, modificar o discontinuar funciones cuando sea razonablemente necesario.</p>
           <h3>3. Compras y donaciones</h3>
-          <p>Las compras opcionales dentro de la aplicación se procesan mediante <strong>Google Play</strong>. Precios, impuestos, reembolsos y condiciones comerciales siguen las normas de Google y las que aceptes en el momento del pago. Las donaciones o compras son voluntarias.</p>
+          <p>Las compras opcionales dentro de la aplicación se procesan mediante <strong>Google Play</strong> (Android) o la <strong>App Store</strong> (iOS). Precios, impuestos, reembolsos y condiciones comerciales siguen las normas de la tienda correspondiente y las que aceptes en el momento del pago. Las donaciones o compras son voluntarias y no desbloquean funciones de juego obligatorias.</p>
           <h3>4. Uso aceptable</h3>
           <p>No debes usar la aplicación para fines ilegales, para vulnerar derechos de terceros ni para intentar acceder de forma no autorizada a sistemas o datos ajenos.</p>
-          <h3>5. Limitación de responsabilidad</h3>
+          <h3>5. Contenido generado por usuarios (plantillas)</h3>
+          <p>Los usuarios pueden crear y publicar plantillas en la biblioteca comunitaria. Eres el único responsable del contenido que compartas. Score Game se reserva el derecho de eliminar plantillas que infrinjan estos términos o la ley aplicable, pero <strong>no asume la obligación de revisar todo el contenido publicado</strong>. Score Game ofrece libertad creativa para que la comunidad diseñe las plantillas que tenga en mente, sin comprometerse con su contenido ni avalar su idoneidad.</p>
+          <h3>6. Limitación de responsabilidad</h3>
           <p>En la medida permitida por la ley aplicable, no nos responsabilizamos de daños indirectos, lucro cesante o pérdida de datos salvo en los casos en que la ley obligue a otro régimen. La aplicación es una herramienta auxiliar para llevar puntuaciones; las decisiones de juego y sus consecuencias son responsabilidad de los usuarios.</p>
-          <h3>6. Legislación y conflictos</h3>
+          <h3>7. Legislación y conflictos</h3>
           <p>
             Salvo que una norma imperativa disponga lo contrario, estos términos se interpretarán según la legislación de la
             <strong>República de Colombia</strong>.
             Para controversias, las partes se someten a los jueces competentes de <strong>Medellín, Antioquia, Colombia</strong>,
             sin perjuicio de los derechos irrenunciables que como consumidor puedas tener según la ley.
           </p>
-          <h3>7. Contacto</h3>
+          <h3>8. Contacto</h3>
           <p>Consultas sobre estos términos o la privacidad: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
         </section>
 
@@ -229,7 +251,7 @@
 
       <!-- English -->
       <div class="lang-panel" data-lang="en" id="panel-en" hidden>
-        <p class="meta">Privacy policy and terms of use · Last updated: May 2026</p>
+        <p class="meta">Privacy policy and terms of use · Last updated: June 2026</p>
         <nav>
           <a href="#privacy-en">Privacy policy</a>
           <a href="#terms-en">Terms and conditions</a>
@@ -245,38 +267,57 @@
             <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
           </p>
           <h3>1. Data we process</h3>
-          <p>The app keeps game scores and optionally lets you create an <strong>account</strong> for the social library (public templates, likes, downloads). Some data stays on your device; account and library data are processed on the developer’s servers when you use those features.</p>
+          <p>
+            <strong>Score Game</strong> is designed to work mainly <strong>on your device</strong>.
+            The current version <strong>does not require an account</strong> and does not send your games to the developer’s servers.
+            Information you enter (scores, names, templates, etc.) is stored locally unless you choose to share it with other apps or people through the system share sheet.
+          </p>
           <ul>
-            <li><strong>Game and settings (local):</strong> player names, scores, templates saved on device, language or theme.</li>
-            <li><strong>Account and profile (server):</strong> if you sign in (email/password or Google), we process email, display name, optional avatar, and a <strong>unique username (@nick)</strong> you choose, shown in the library on templates you publish. Usernames must be unique; company or brand names are not allowed unless legally verified later.</li>
-            <li><strong>Library activity:</strong> templates you publish, likes/dislikes, downloads, and related metadata.</li>
-            <li><strong>Purchase-related identifiers:</strong> optional in-app purchases via <strong>Google Play</strong>; Google processes payment data under its policies.</li>
+            <li><strong>Game data (local):</strong> player names, scores, game history, in-progress sports matches, category templates, roulette templates, dice presets, sports history, frequent-player catalog, and game visibility preferences.</li>
+            <li><strong>App settings (local):</strong> language, light/dark theme, lite mode, sounds, tips already shown, hidden games in the menu, internal counters for store review prompts, and donation UI preferences.</li>
+            <li><strong>Player photos (local, optional):</strong> if you add an avatar, the app may access the <strong>camera</strong> or <strong>photo library</strong>. The image is compressed and saved only in the app’s internal storage; it is not uploaded to the developer’s servers.</li>
+            <li><strong>Home screen widgets (local):</strong> on Android and iOS you can add shortcuts to a game. Your choice is stored on the device (e.g. widget preferences).</li>
+            <li><strong>Sharing (under your control):</strong> you may share template codes or links (<code>scoregame://</code>) or result images via the system share menu. You choose the app or recipient; the developer does not receive those messages.</li>
+            <li><strong>Optional purchases (store):</strong> voluntary donations or purchases are processed through <strong>Google Play</strong> (Android) or the <strong>App Store</strong> (iOS). Payment and transaction identifiers are handled by the store under its policies. The device may keep a local record of support shown in the app (e.g. thank-you badges), without bank details.</li>
+            <li><strong>Device characteristics (local):</strong> to enable lite mode on older hardware, the app may read device model or capabilities <strong>only on the phone</strong>, without sending them to the developer.</li>
           </ul>
-          <h3>2. Purposes</h3>
+          <p><strong>Community templates:</strong> Score Game includes a library where the community can share and explore game templates created by its own users. This feature does not require a user account, profile, or any identifier. Account and profile options may be introduced in future versions; this policy will be updated before they launch.</p>
+          <h3>2. Device permissions</h3>
+          <p>The app may request or use the following permissions depending on what you use:</p>
           <ul>
-            <li>To provide scorekeeping features and other utilities included in the app.</li>
-            <li>To manage your account, authentication, and public username in the library.</li>
-            <li>To show community templates, rankings, and attribute authorship with your @nick.</li>
-            <li>To moderate content and accounts (e.g. admins may change a @nick or suspend users).</li>
-            <li>To handle optional donations or purchases offered through Google Play.</li>
+            <li><strong>Internet:</strong> to query donation products in the store, complete in-app purchases, and open the store listing for reviews. It is not used to sync your games to the developer’s servers in the current version.</li>
+            <li><strong>Camera and photo library (optional):</strong> only if you add a player profile photo.</li>
+            <li><strong>Keep screen awake:</strong> during active games so the screen does not turn off while you keep score. This does not access additional personal data.</li>
+          </ul>
+          <h3>3. Purposes</h3>
+          <ul>
+            <li>To provide scorekeeping, sports, extras (dice, roulette, tools, etc.) and other utilities in the app.</li>
+            <li>To save and restore your information on the device.</li>
+            <li>To support optional avatars, widgets, sharing templates or results, and deep links.</li>
+            <li>To handle optional donations or purchases through Google Play or the App Store.</li>
+            <li>To show store review prompts after several completed games, with cooldowns.</li>
+            <li>To adapt performance (lite mode) on limited devices.</li>
             <li>To comply with legal obligations where applicable.</li>
           </ul>
-          <h3>3. Retention</h3>
-          <p>Data stored locally remains on your device until you delete it, uninstall the app, or use in-app features that remove information. Invoices or purchase records handled by Google follow Google Play policies.</p>
-          <h3>4. Sharing and third parties</h3>
-          <p>We do not sell your personal data. The app <strong>does not currently integrate third-party ad networks</strong> to show ads inside the app. In-app purchases use <strong>Google Play Billing</strong>; see Google’s privacy policy if you use those services.</p>
-          <h3>5. Security</h3>
+          <h3>4. Retention</h3>
+          <p>Data stored locally remains on your device until you delete it, uninstall the app, or use in-app features that remove information. Invoices or purchase records are kept by Google or Apple under their policies.</p>
+          <h3>5. Sharing and third parties</h3>
+          <p>We do not sell your personal data. The app <strong>does not integrate third-party ad networks</strong> or advertising analytics SDKs in the current version. In-app purchases use <strong>Google Play Billing</strong> or <strong>Apple In-App Purchase</strong>; see the privacy policy of the store you use. UI fonts are served from assets bundled in the app (no runtime font downloads).</p>
+          <h3>6. Security</h3>
           <p>We take reasonable measures to protect information processed within the app. No system is 100% secure; use the app on updated, protected devices.</p>
-          <h3>6. Children</h3>
+          <h3>7. Children</h3>
           <p>The app is not specifically directed at children under 14 (or the applicable age in your country). If you are a parent or guardian and believe a child has provided data, contact <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
-          <h3>7. Your rights</h3>
+          <h3>8. Your rights</h3>
           <p>
             If you live in <strong>Colombia</strong>, under Law 1581 of 2012 and related rules, you may exercise rights such as access, update, correction, and deletion by contacting the email above.
             If you live in the <strong>EEA</strong>, GDPR rights may also apply.
             You may lodge complaints with the competent authority (for example, in Colombia, the Superintendence of Industry and Commerce for personal data matters, where applicable).
           </p>
-          <h3>8. Changes</h3>
+          <h3>9. Changes</h3>
           <p>We may update this policy. The last revision date will be shown on this page. Continued use of the app after material changes may mean you accept the updated policy; review this page periodically.</p>
+          <h3>10. Community templates and user-generated content</h3>
+          <p>Score Game was built to track game scores and to let the community create and share custom game templates. The templates available in the library are created and published entirely by users themselves; Score Game acts solely as a distribution platform.</p>
+          <p><strong>Score Game is not responsible for the content, accuracy, or suitability of templates created or shared by users.</strong> The app gives its community creative freedom and does not proactively moderate published content. If you find an inappropriate template, you may report it to <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a> for review.</p>
         </section>
 
         <section id="terms-en">
@@ -287,19 +328,21 @@
           <h3>2. Functionality</h3>
           <p>The app is provided “as is”, without warranty of error-free operation or uninterrupted availability. The developer may update, change, or discontinue features when reasonably necessary.</p>
           <h3>3. Purchases and donations</h3>
-          <p>Optional in-app purchases are processed through <strong>Google Play</strong>. Prices, taxes, refunds, and commercial terms follow Google’s rules and what you accept at checkout. Donations or purchases are voluntary.</p>
+          <p>Optional in-app purchases are processed through <strong>Google Play</strong> (Android) or the <strong>App Store</strong> (iOS). Prices, taxes, refunds, and commercial terms follow the applicable store’s rules and what you accept at checkout. Donations or purchases are voluntary and do not unlock mandatory gameplay features.</p>
           <h3>4. Acceptable use</h3>
           <p>You must not use the app for unlawful purposes, to infringe third-party rights, or to attempt unauthorized access to systems or data.</p>
-          <h3>5. Limitation of liability</h3>
+          <h3>5. User-generated content (templates)</h3>
+          <p>Users may create and publish templates in the community library. You are solely responsible for the content you share. Score Game reserves the right to remove templates that violate these terms or applicable law, but <strong>does not assume the obligation to review all published content</strong>. Score Game gives its community creative freedom to design the templates they have in mind, without endorsing their content or vouching for their suitability.</p>
+          <h3>6. Limitation of liability</h3>
           <p>To the fullest extent permitted by law, we are not liable for indirect damages, lost profits, or data loss except where the law requires otherwise. The app is an auxiliary tool for scores; gameplay decisions and consequences are the users’ responsibility.</p>
-          <h3>6. Law and disputes</h3>
+          <h3>7. Law and disputes</h3>
           <p>
             Unless mandatory law says otherwise, these terms are governed by the laws of the
             <strong>Republic of Colombia</strong>.
             For disputes, the parties submit to the competent courts of <strong>Medellín, Antioquia, Colombia</strong>,
             without prejudice to non-waivable consumer rights.
           </p>
-          <h3>7. Contact</h3>
+          <h3>8. Contact</h3>
           <p>Questions about these terms or privacy: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
         </section>
 
@@ -310,7 +353,7 @@
 
       <!-- Português -->
       <div class="lang-panel" data-lang="pt" id="panel-pt" hidden>
-        <p class="meta">Política de privacidade e termos de uso · Atualização: maio de 2026</p>
+        <p class="meta">Política de privacidade e termos de uso · Atualização: junho de 2026</p>
         <nav>
           <a href="#privacidade-pt">Política de privacidade</a>
           <a href="#termos-pt">Termos e condições</a>
@@ -327,38 +370,57 @@
             <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
           </p>
           <h3>1. Quais dados são tratados</h3>
-          <p>O aplicativo registra placares e, opcionalmente, permite criar uma <strong>conta</strong> para a biblioteca social (modelos públicos, curtidas, downloads). Parte dos dados fica no dispositivo; conta e biblioteca são tratados nos servidores do desenvolvedor quando você usa essas funções.</p>
+          <p>
+            O <strong>Score Game</strong> foi pensado para funcionar principalmente <strong>no seu dispositivo</strong>.
+            A versão atual <strong>não exige conta</strong> nem envia suas partidas para servidores do desenvolvedor.
+            As informações que você insere (placares, nomes, modelos etc.) ficam armazenadas localmente, salvo se você decidir compartilhá-las com outros apps ou pessoas pelo compartilhamento do sistema.
+          </p>
           <ul>
-            <li><strong>Dados de partida e configuração (local):</strong> nomes, pontuações, modelos no dispositivo, idioma ou tema.</li>
-            <li><strong>Conta e perfil (servidor):</strong> ao entrar (e-mail/senha ou Google), tratamos e-mail, nome exibido, avatar opcional e um <strong>nome de usuário único (@nick)</strong> visível na biblioteca nos modelos que você publicar. O @nick deve ser único; nomes de empresas ou marcas não são permitidos salvo verificação legal posterior.</li>
-            <li><strong>Atividade na biblioteca:</strong> modelos publicados, curtidas/não curtidas, downloads e metadados.</li>
-            <li><strong>Identificadores de compra:</strong> compras opcionais via <strong>Google Play</strong>; a Google trata os dados de pagamento conforme suas políticas.</li>
+            <li><strong>Dados de partida e jogos (local):</strong> nomes, pontuações, histórico, partidas esportivas em andamento, modelos de categorias, modelos de roleta, presets de dados, histórico esportivo, catálogo de jogadores frequentes e preferências de visibilidade de jogos.</li>
+            <li><strong>Configurações do app (local):</strong> idioma, tema claro/escuro, modo leve, sons, dicas já exibidas, jogos ocultos no menu, contadores internos para pedir avaliação na loja e preferências de doações na interface.</li>
+            <li><strong>Fotos de jogador (local, opcional):</strong> se você adicionar um avatar, o app pode acessar a <strong>câmera</strong> ou a <strong>galeria</strong>. A imagem é comprimida e salva apenas no armazenamento interno do app; não é enviada aos servidores do desenvolvedor.</li>
+            <li><strong>Widgets da tela inicial (local):</strong> no Android e iOS você pode adicionar atalhos para um jogo. A escolha fica salva no dispositivo (ex.: preferências do widget).</li>
+            <li><strong>Compartilhamento (sob seu controle):</strong> você pode compartilhar códigos ou links de modelos (<code>scoregame://</code>) ou imagens de resultados pelo menu de compartilhar do sistema. Você escolhe o app ou destinatário; o desenvolvedor não recebe esses envios.</li>
+            <li><strong>Compras opcionais (loja):</strong> doações ou compras voluntárias são processadas pela <strong>Google Play</strong> (Android) ou <strong>App Store</strong> (iOS). Pagamento e identificadores de transação são tratados pela loja conforme suas políticas. No dispositivo pode ficar um registro local do apoio exibido no app (ex.: selos de agradecimento), sem dados bancários.</li>
+            <li><strong>Características do dispositivo (local):</strong> para ativar o modo leve em aparelhos antigos, o app pode ler modelo ou capacidades do dispositivo <strong>somente no telefone</strong>, sem enviá-los ao desenvolvedor.</li>
           </ul>
-          <h3>2. Finalidades</h3>
+          <p><strong>Modelos da comunidade:</strong> o Score Game inclui uma biblioteca onde a comunidade pode compartilhar e explorar modelos de jogos criados pelos próprios usuários. Esse recurso não requer conta de usuário, perfil ou qualquer identificador. Opções de conta e perfil poderão ser ativadas em versões futuras; esta política será atualizada antes disso.</p>
+          <h3>2. Permissões do dispositivo</h3>
+          <p>O app pode solicitar ou usar as permissões abaixo conforme o que você utilizar:</p>
           <ul>
-            <li>Permitir o funcionamento das funções de placar e utilitários incluídos no aplicativo.</li>
-            <li>Gerir sua conta, autenticação e nome de usuário público na biblioteca.</li>
-            <li>Exibir modelos da comunidade, rankings e atribuir autoria com seu @nick.</li>
-            <li>Moderar conteúdo e contas (ex.: administradores podem alterar um @nick ou suspender usuários).</li>
-            <li>Gerir doações ou compras opcionais oferecidas pela Google Play.</li>
+            <li><strong>Internet:</strong> consultar produtos de doação na loja, concluir compras no app e abrir a página do app para avaliação. Não é usada para sincronizar suas partidas com servidores do desenvolvedor na versão atual.</li>
+            <li><strong>Câmera e galeria (opcional):</strong> somente se você adicionar foto de perfil de jogador.</li>
+            <li><strong>Manter tela ligada:</strong> durante partidas ativas, para que a tela não apague enquanto você marca o placar. Não implica acesso a dados pessoais adicionais.</li>
+          </ul>
+          <h3>3. Finalidades</h3>
+          <ul>
+            <li>Permitir placares, esportes, extras (dados, roleta, ferramentas etc.) e utilitários do aplicativo.</li>
+            <li>Salvar e recuperar suas informações no dispositivo.</li>
+            <li>Permitir avatares opcionais, widgets, compartilhar modelos ou resultados e links diretos.</li>
+            <li>Gerir doações ou compras opcionais pela Google Play ou App Store.</li>
+            <li>Exibir pedidos de avaliação na loja após várias partidas concluídas, com intervalos.</li>
+            <li>Adaptar o desempenho (modo leve) em dispositivos limitados.</li>
             <li>Cumprir obrigações legais quando aplicável.</li>
           </ul>
-          <h3>3. Conservação</h3>
-          <p>Os dados guardados localmente permanecem no seu dispositivo até você apagá-los, desinstalar o aplicativo ou usar funções do próprio app que eliminem informações. Faturas ou registros de compras geridos pela Google seguem as políticas da Google Play.</p>
-          <h3>4. Transferências e terceiros</h3>
-          <p>Não vendemos seus dados pessoais. O aplicativo <strong>não integra, no desenho atual, redes publicitárias de terceiros</strong> para exibir anúncios dentro do app. As compras no app são feitas via <strong>Google Play Billing</strong>; consulte a política de privacidade da Google se usar esses serviços.</p>
-          <h3>5. Segurança</h3>
+          <h3>4. Conservação</h3>
+          <p>Os dados guardados localmente permanecem no seu dispositivo até você apagá-los, desinstalar o aplicativo ou usar funções do próprio app que eliminem informações. Faturas ou registros de compras são conservados pela Google ou Apple conforme suas políticas.</p>
+          <h3>5. Transferências e terceiros</h3>
+          <p>Não vendemos seus dados pessoais. O aplicativo <strong>não integra redes publicitárias de terceiros</strong> nem SDKs de analítica publicitária na versão atual. As compras no app usam <strong>Google Play Billing</strong> ou <strong>Apple In-App Purchase</strong>; consulte a política de privacidade da loja que você utilizar. As fontes da interface vêm de recursos incluídos no app (sem download de fontes em tempo de execução).</p>
+          <h3>6. Segurança</h3>
           <p>Adotamos medidas razoáveis para proteger as informações tratadas no âmbito do aplicativo. Nenhum sistema é 100&nbsp;% infalível; use o app em dispositivos atualizados e protegidos.</p>
-          <h3>6. Menores</h3>
+          <h3>7. Menores</h3>
           <p>O aplicativo não se dirige especificamente a menores de 14 anos (ou a idade aplicável no seu país). Se você é responsável legal e considera que um menor forneceu dados, entre em contato em <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
-          <h3>7. Direitos</h3>
+          <h3>8. Direitos</h3>
           <p>
             Se você reside na <strong>Colômbia</strong>, conforme a Lei 1581 de 2012 e normas conexas, pode exercer direitos de conhecimento, atualização, retificação e supressão, entre outros, contactando o e-mail indicado acima.
             Se reside no <strong>EEE</strong>, também podem aplicar-se seus direitos ao abrigo do RGPD.
             Pode apresentar reclamações à autoridade competente (por exemplo, na Colômbia, a Superintendência de Indústria e Comércio em matéria de proteção de dados pessoais, quando aplicável).
           </p>
-          <h3>8. Alterações</h3>
+          <h3>9. Alterações</h3>
           <p>Podemos atualizar esta política. A data da última revisão será indicada nesta página. O uso continuado do aplicativo após alterações relevantes pode implicar a aceitação da política atualizada; consulte esta página periodicamente.</p>
+          <h3>10. Modelos da comunidade e conteúdo gerado por usuários</h3>
+          <p>O Score Game foi criado para registrar pontuações de jogos e para que a comunidade possa criar e compartilhar modelos de jogos personalizados. Os modelos disponíveis na biblioteca são criados e publicados inteiramente pelos próprios usuários; o Score Game atua apenas como plataforma de distribuição.</p>
+          <p><strong>O Score Game não se responsabiliza pelo conteúdo, precisão ou adequação dos modelos criados ou compartilhados pelos usuários.</strong> O aplicativo oferece liberdade criativa à sua comunidade e não modera preventivamente o conteúdo publicado. Se você encontrar um modelo inapropriado, pode reportá-lo para <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a> para revisão.</p>
         </section>
 
         <section id="termos-pt">
@@ -369,24 +431,129 @@
           <h3>2. Funcionalidade</h3>
           <p>O aplicativo é oferecido «como está», sem garantia de ausência de erros ou disponibilidade ininterrupta. O desenvolvedor pode atualizar, modificar ou descontinuar funções quando razoavelmente necessário.</p>
           <h3>3. Compras e doações</h3>
-          <p>As compras opcionais no aplicativo são processadas pela <strong>Google Play</strong>. Preços, impostos, reembolsos e condições comerciais seguem as regras da Google e as que você aceitar no pagamento. Doações ou compras são voluntárias.</p>
+          <p>As compras opcionais no aplicativo são processadas pela <strong>Google Play</strong> (Android) ou <strong>App Store</strong> (iOS). Preços, impostos, reembolsos e condições comerciais seguem as regras da loja correspondente e as que você aceitar no pagamento. Doações ou compras são voluntárias e não desbloqueiam funções de jogo obrigatórias.</p>
           <h3>4. Uso aceitável</h3>
           <p>Você não deve usar o aplicativo para fins ilegais, para violar direitos de terceiros nem para tentar acessar de forma não autorizada sistemas ou dados alheios.</p>
-          <h3>5. Limitação de responsabilidade</h3>
+          <h3>5. Conteúdo gerado por usuários (modelos)</h3>
+          <p>Os usuários podem criar e publicar modelos na biblioteca da comunidade. Você é o único responsável pelo conteúdo que compartilhar. O Score Game reserva-se o direito de remover modelos que violem estes termos ou a legislação aplicável, mas <strong>não assume a obrigação de revisar todo o conteúdo publicado</strong>. O Score Game oferece liberdade criativa para que a comunidade projete os modelos que tiver em mente, sem comprometer-se com seu conteúdo nem atestar sua adequação.</p>
+          <h3>6. Limitação de responsabilidade</h3>
           <p>Na medida permitida pela lei aplicável, não nos responsabilizamos por danos indiretos, lucros cessantes ou perda de dados, salvo quando a lei exigir outro regime. O aplicativo é uma ferramenta auxiliar para placares; decisões de jogo e suas consequências são de responsabilidade dos usuários.</p>
-          <h3>6. Lei e conflitos</h3>
+          <h3>7. Lei e conflitos</h3>
           <p>
             Salvo norma imperativa em contrário, estes termos regem-se pela legislação da
             <strong>República da Colômbia</strong>.
             Para controvérsias, as partes submetem-se aos juízes competentes de <strong>Medellín, Antioquia, Colômbia</strong>,
             sem prejuízo de direitos irrenunciáveis do consumidor quando aplicável.
           </p>
-          <h3>7. Contato</h3>
+          <h3>8. Contato</h3>
           <p>Dúvidas sobre estes termos ou privacidade: <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
         </section>
 
         <footer>
           Score Game · Pessoa física · Colômbia · Contato: j.fabra25@gmail.com
+        </footer>
+      </div>
+
+      <!-- Français -->
+      <div class="lang-panel" data-lang="fr" id="panel-fr" hidden>
+        <p class="meta">Politique de confidentialité et conditions d'utilisation · Mise à jour : juin 2026</p>
+        <nav>
+          <a href="#confidentialite-fr">Politique de confidentialité</a>
+          <a href="#conditions-fr">Conditions d'utilisation</a>
+        </nav>
+
+        <section id="confidentialite-fr" style="margin-top:1.25rem;">
+          <h2>Politique de confidentialité</h2>
+          <p>
+            Cette politique décrit comment l'application mobile <strong>Score Game</strong>
+            (ci-après « l'application ») traite les informations relatives aux utilisateurs.
+            Le responsable du traitement est la <strong>personne physique</strong> développeuse de cette application,
+            domiciliée à <strong>Medellín, Antioquia, Colombie</strong>.
+            Pour exercer vos droits ou poser des questions sur la confidentialité, écrivez à
+            <strong><a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a></strong>.
+          </p>
+          <h3>1. Données traitées</h3>
+          <p>
+            <strong>Score Game</strong> est conçue pour fonctionner principalement <strong>sur votre appareil</strong>.
+            La version actuelle <strong>ne nécessite pas de compte</strong> et n'envoie pas vos parties aux serveurs du développeur.
+            Les informations que vous saisissez (scores, noms, modèles, etc.) sont stockées localement, sauf si vous choisissez de les partager avec d'autres applications ou personnes via le menu de partage du système.
+          </p>
+          <ul>
+            <li><strong>Données de partie et de jeu (local) :</strong> noms des joueurs, scores, historique des parties, matchs sportifs en cours, modèles de catégories, modèles de roulette, préréglages de dés, historique sportif, catalogue de joueurs fréquents et préférences de visibilité des jeux.</li>
+            <li><strong>Paramètres de l'app (local) :</strong> langue, thème clair/sombre, mode léger, sons, conseils déjà affichés, jeux masqués dans le menu, compteurs internes pour demander une note sur le store et préférences d'affichage des dons.</li>
+            <li><strong>Photos de joueur (local, optionnel) :</strong> si vous ajoutez un avatar, l'app peut accéder à l'<strong>appareil photo</strong> ou à la <strong>galerie</strong>. L'image est compressée et enregistrée uniquement dans le stockage interne de l'application ; elle n'est pas envoyée aux serveurs du développeur.</li>
+            <li><strong>Widgets d'écran d'accueil (local) :</strong> sur Android et iOS, vous pouvez ajouter des raccourcis vers un jeu. Le choix est enregistré sur l'appareil (p. ex. préférences du widget).</li>
+            <li><strong>Partage (sous votre contrôle) :</strong> vous pouvez partager des codes ou liens de modèles (<code>scoregame://</code>) ou des images de résultats via le menu de partage du système. Vous choisissez l'application ou le destinataire ; le développeur ne reçoit pas ces envois.</li>
+            <li><strong>Achats optionnels (store) :</strong> les dons ou achats volontaires sont traités via <strong>Google Play</strong> (Android) ou l'<strong>App Store</strong> (iOS). Le paiement et les identifiants de transaction sont gérés par la boutique concernée selon ses politiques. L'appareil peut conserver un enregistrement local du soutien affiché dans l'app (p. ex. badges de remerciement), sans données bancaires.</li>
+            <li><strong>Caractéristiques de l'appareil (local) :</strong> pour activer le mode léger sur les appareils anciens, l'app peut lire le modèle ou les capacités de l'appareil <strong>uniquement sur le téléphone</strong>, sans les transmettre au développeur.</li>
+          </ul>
+          <p><strong>Modèles de la communauté :</strong> Score Game inclut une bibliothèque où la communauté peut partager et explorer des modèles de jeux créés par ses propres utilisateurs. Cette fonctionnalité ne nécessite pas de compte utilisateur, de profil ou d'identifiant. Des options de compte et de profil pourront être introduites dans de futures versions ; cette politique sera mise à jour avant leur activation.</p>
+          <h3>2. Autorisations de l'appareil</h3>
+          <p>L'application peut demander ou utiliser les autorisations suivantes selon les fonctions que vous utilisez :</p>
+          <ul>
+            <li><strong>Internet :</strong> consulter les produits de don sur le store, finaliser les achats in-app et ouvrir la fiche de l'app pour la noter. Non utilisé pour synchroniser vos parties avec les serveurs du développeur dans la version actuelle.</li>
+            <li><strong>Appareil photo et galerie (optionnel) :</strong> uniquement si vous ajoutez une photo de profil de joueur.</li>
+            <li><strong>Maintenir l'écran allumé :</strong> pendant les parties actives, pour que l'écran ne s'éteigne pas pendant que vous tenez le score. N'implique pas d'accès à des données personnelles supplémentaires.</li>
+          </ul>
+          <h3>3. Finalités</h3>
+          <ul>
+            <li>Permettre les scores, sports, extras (dés, roulette, outils, etc.) et utilitaires inclus dans l'application.</li>
+            <li>Enregistrer et récupérer vos informations sur l'appareil.</li>
+            <li>Permettre des avatars optionnels, des widgets, le partage de modèles ou de résultats et les liens profonds.</li>
+            <li>Gérer les dons ou achats optionnels via Google Play ou l'App Store.</li>
+            <li>Afficher, avec modération, des demandes de notation sur le store après plusieurs parties terminées.</li>
+            <li>Adapter les performances (mode léger) sur les appareils limités.</li>
+            <li>Respecter les obligations légales le cas échéant.</li>
+          </ul>
+          <h3>4. Conservation</h3>
+          <p>Les données stockées localement restent sur votre appareil jusqu'à ce que vous les supprimiez, désinstalliez l'application ou utilisiez des fonctions de l'app qui effacent les informations. Les factures ou enregistrements d'achats sont conservés par Google ou Apple selon leurs politiques.</p>
+          <h3>5. Cessions et tiers</h3>
+          <p>Nous ne vendons pas vos données personnelles. L'application <strong>n'intègre pas de réseaux publicitaires tiers</strong> ni de SDK d'analytique publicitaire dans la version actuelle. Les achats in-app utilisent <strong>Google Play Billing</strong> ou <strong>Apple In-App Purchase</strong> ; consultez la politique de confidentialité de la boutique que vous utilisez. Les polices de l'interface proviennent de ressources incluses dans l'app (sans téléchargement de polices à l'exécution).</p>
+          <h3>6. Sécurité</h3>
+          <p>Nous adoptons des mesures raisonnables pour protéger les informations traitées dans le cadre de l'application. Aucun système n'est infaillible à 100&nbsp;% ; utilisez l'app sur des appareils à jour et protégés.</p>
+          <h3>7. Mineurs</h3>
+          <p>L'application n'est pas spécifiquement destinée aux mineurs de moins de 14 ans (ou l'âge applicable dans votre pays). Si vous êtes parent ou tuteur et pensez qu'un mineur a fourni des données, contactez <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+          <h3>8. Droits</h3>
+          <p>
+            Si vous résidez en <strong>Colombie</strong>, conformément à la loi 1581 de 2012 et aux textes connexes, vous pouvez exercer vos droits d'accès, de mise à jour, de rectification et de suppression, entre autres, en contactant l'adresse indiquée ci-dessus.
+            Si vous résidez dans l'<strong>EEE</strong>, vos droits au titre du RGPD peuvent également s'appliquer.
+            Vous pouvez introduire une réclamation auprès de l'autorité compétente (par exemple, en Colombie, la Superintendencia de Industria y Comercio en matière de protection des données personnelles, le cas échéant).
+          </p>
+          <h3>9. Modifications</h3>
+          <p>Nous pouvons mettre à jour cette politique. La date de la dernière révision sera indiquée sur cette page. L'utilisation continue de l'application après des changements importants peut impliquer l'acceptation de la politique mise à jour ; consultez cette page régulièrement.</p>
+          <h3>10. Modèles de la communauté et contenu généré par les utilisateurs</h3>
+          <p>Score Game a été créée pour suivre les scores de jeux et permettre à la communauté de créer et partager des modèles de jeux personnalisés. Les modèles disponibles dans la bibliothèque sont créés et publiés entièrement par les utilisateurs eux-mêmes ; Score Game agit uniquement en tant que plateforme de distribution.</p>
+          <p><strong>Score Game n'est pas responsable du contenu, de l'exactitude ou de la pertinence des modèles créés ou partagés par les utilisateurs.</strong> L'application offre une liberté créative à sa communauté et ne modère pas préventivement le contenu publié. Si vous trouvez un modèle inapproprié, vous pouvez le signaler à <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a> pour examen.</p>
+        </section>
+
+        <section id="conditions-fr">
+          <h2>Conditions d'utilisation</h2>
+          <p>En téléchargeant ou en utilisant <strong>Score Game</strong>, vous acceptez ces conditions. Si vous n'êtes pas d'accord, n'utilisez pas l'application.</p>
+          <h3>1. Licence d'utilisation</h3>
+          <p>Nous vous accordons une licence personnelle, limitée, non exclusive et non transférable pour utiliser l'application conformément à sa finalité et à ces conditions.</p>
+          <h3>2. Fonctionnalité</h3>
+          <p>L'application est fournie « en l'état », sans garantie d'absence d'erreurs ni de disponibilité ininterrompue. Le développeur peut mettre à jour, modifier ou interrompre des fonctions lorsque cela est raisonnablement nécessaire.</p>
+          <h3>3. Achats et dons</h3>
+          <p>Les achats optionnels dans l'application sont traités via <strong>Google Play</strong> (Android) ou l'<strong>App Store</strong> (iOS). Les prix, taxes, remboursements et conditions commerciales suivent les règles de la boutique concernée et ce que vous acceptez au moment du paiement. Les dons ou achats sont volontaires et ne débloquent pas de fonctions de jeu obligatoires.</p>
+          <h3>4. Usage acceptable</h3>
+          <p>Vous ne devez pas utiliser l'application à des fins illégales, pour porter atteinte aux droits de tiers ni pour tenter d'accéder de manière non autorisée à des systèmes ou données.</p>
+          <h3>5. Contenu généré par les utilisateurs (modèles)</h3>
+          <p>Les utilisateurs peuvent créer et publier des modèles dans la bibliothèque communautaire. Vous êtes seul responsable du contenu que vous partagez. Score Game se réserve le droit de supprimer des modèles qui enfreignent ces conditions ou la loi applicable, mais <strong>n'assume pas l'obligation de contrôler tout le contenu publié</strong>. Score Game offre une liberté créative à sa communauté pour concevoir les modèles qu'elle a en tête, sans s'engager sur leur contenu ni en garantir la pertinence.</p>
+          <h3>6. Limitation de responsabilité</h3>
+          <p>Dans la mesure permise par la loi applicable, nous ne sommes pas responsables des dommages indirects, du manque à gagner ou de la perte de données, sauf lorsque la loi l'exige autrement. L'application est un outil auxiliaire pour les scores ; les décisions de jeu et leurs conséquences relèvent de la responsabilité des utilisateurs.</p>
+          <h3>7. Droit applicable et litiges</h3>
+          <p>
+            Sauf disposition impérative contraire, ces conditions sont régies par le droit de la
+            <strong>République de Colombie</strong>.
+            Pour les litiges, les parties se soumettent aux tribunaux compétents de <strong>Medellín, Antioquia, Colombie</strong>,
+            sans préjudice des droits du consommateur d'ordre public.
+          </p>
+          <h3>8. Contact</h3>
+          <p>Questions sur ces conditions ou la confidentialité : <a href="mailto:j.fabra25@gmail.com">j.fabra25@gmail.com</a>.</p>
+        </section>
+
+        <footer>
+          Score Game · Personne physique · Colombie · Contact : j.fabra25@gmail.com
         </footer>
       </div>
   </div>
@@ -397,25 +564,28 @@
       var titles = {
         es: 'Score Game — Política de privacidad y Términos',
         en: 'Score Game — Privacy policy and Terms',
-        pt: 'Score Game — Política de privacidade e Termos'
+        pt: 'Score Game — Política de privacidade e Termos',
+        fr: 'Score Game — Politique de confidentialité et Conditions'
       };
       var descriptions = {
         es: 'Política de privacidad y términos de uso de la aplicación Score Game.',
         en: 'Privacy policy and terms of use for the Score Game app.',
-        pt: 'Política de privacidade e termos de uso do aplicativo Score Game.'
+        pt: 'Política de privacidade e termos de uso do aplicativo Score Game.',
+        fr: 'Politique de confidentialité et conditions d\'utilisation de l\'application Score Game.'
       };
-      var htmlLang = { es: 'es', en: 'en', pt: 'pt-BR' };
+      var htmlLang = { es: 'es', en: 'en', pt: 'pt-BR', fr: 'fr' };
 
       function getPreferredLang() {
         var q = new URLSearchParams(window.location.search).get('lang');
-        if (q === 'es' || q === 'en' || q === 'pt') return q;
+        if (q === 'es' || q === 'en' || q === 'pt' || q === 'fr') return q;
         try {
           var stored = localStorage.getItem(STORAGE_KEY);
-          if (stored === 'es' || stored === 'en' || stored === 'pt') return stored;
+          if (stored === 'es' || stored === 'en' || stored === 'pt' || stored === 'fr') return stored;
         } catch (e) {}
         var nav = (navigator.language || '').slice(0, 2).toLowerCase();
         if (nav === 'en') return 'en';
         if (nav === 'pt') return 'pt';
+        if (nav === 'fr') return 'fr';
         return 'es';
       }
 
